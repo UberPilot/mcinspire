@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html
+{
+    --thumb-size: 15vh;
+    height: 100vh;
+}
+
+
+body
+{
+    background-color: black;
+    margin: 0;
+    font-size: 18px;
+}
+
+.main
+{
+    min-height: 85vh;
+    height: 85vh;
+    background-color: slategray;
+    width: 100%;
+    display: table;
+    border-collapse:collapse;
+    margin: auto;
+}
+
+.main img
+{
+    max-width:100%;
+    max-height:80vh;
+}
+
+.imageInfo
+{
+    height: 1px;
+    display: table-row;
+    vertical-align: bottom; 
+}
+
+.title
+{
+    font-family: Oswald;
+    color: white;
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+.artist
+{
+    font-family: Oswald;
+    color: gainsboro;
+    font-size: 1em;
+    font-variant: small-caps;
+}
+
+.artist a:link
+{
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.artist a:visited
+{
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.artist a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+.artist a:active
+{
+    color: white;
+    text-decoration: none;
+}
+
+.thumbs
+{
+    width: 100%;
+    height: var(--thumb-size);
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.thumb
+{
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.thumb img
+{
+    max-width:100%;
+    max-height:100%;
+    width: 100%;
+}
+
+.active
+{
+    background-color: slategray;
+}
+
+.thumbcontent
+{
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    line-height: var(--thumb-size);
+    background-color: darkslategray;
+}
+
+.thumbcontent img
+{
+    vertical-align: middle;
+}
